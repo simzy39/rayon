@@ -64,6 +64,7 @@ must_use! {
     take                /** v.par_iter().take(1); */
     update              /** v.par_iter().update(|_| {}); */
     while_some          /** v.par_iter().cloned().while_some(); */
+    with_max_concurrency /** v.into_iter().par_bridge().with_max_concurrency(2); */
     with_max_len        /** v.par_iter().with_max_len(1); */
     with_min_len        /** v.par_iter().with_min_len(1); */
     zip                 /** v.par_iter().zip(&v); */
